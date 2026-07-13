@@ -30,8 +30,7 @@
 **해결**
 GET 없이 DECR 한 번으로 차감하고, 음수면 INCR로 롤백하는 단일 카운터 방식을 택했다.
 
-<!-- 이미지: Redis 선차감 → DB 원장 저장 흐름 다이어그램 (Excalidraw) -->
-<!-- ![단일 카운터 처리 흐름](images/popspot-counter-flow.png) -->
+<img width="910" height="952" alt="Image" src="https://github.com/user-attachments/assets/5541e957-8561-4627-80bb-25d1a8f428fc" />
 
 **평가** — 성능과 정확성을 나눠 검증했다.
 - **성능(k6):** DB 방식 대비 처리량 1.9배, p95 7.8배 / Lua 대비 p95 5.1배 개선
