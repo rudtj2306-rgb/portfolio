@@ -30,7 +30,7 @@
 **해결**
 GET 없이 DECR 한 번으로 차감하고, 음수면 INCR로 롤백하는 단일 카운터 방식을 택했다.
 
-<img width="600" height="32-" alt="Image" src="https://github.com/user-attachments/assets/6614cad5-631e-421e-9ada-1efd09c3d8b4" />
+<img width="910" height="952" alt="Image" src="https://github.com/user-attachments/assets/6614cad5-631e-421e-9ada-1efd09c3d8b4" />
 
 **평가** — 성능과 정확성을 나눠 검증했다.
 - **성능(k6):** DB 방식 대비 처리량 1.9배, p95 7.8배 / Lua 대비 p95 5.1배 개선
